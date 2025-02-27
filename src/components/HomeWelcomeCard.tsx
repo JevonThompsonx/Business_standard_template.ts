@@ -1,6 +1,6 @@
 const HomeWelcomeCard = () => {
   return (
-    <div className="w-[90%] h-auto aspect-square md:aspect-video bg-[url(images/erik-brolin-wmZNEGkcsmw-unsplash.jpg)] md:bg-[url(/images/kaylee-garrett-GaprWyIw66o-unsplash.jpg)] bg-cover bg-center flex flex-col items-center justify-evenly">
+    <div className="w-[90%] h-auto aspect-square md:aspect-video bg-[url(images/erik-brolin-wmZNEGkcsmw-unsplash.jpg)] md:bg-[url(/images/kaylee-garrett-GaprWyIw66o-unsplash.jpg)] bg-cover bg-center flex flex-col items-center justify-evenly rounded-2xl">
       <div className="h-3/5 w-full"></div>
       <div id="text-box" className="h-3/5 md:h-2/5 w-full bg-white/60 flex flex-col justify-evenly ">
         <h1 className="text">hola</h1>
