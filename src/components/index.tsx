@@ -1,4 +1,4 @@
 import { Nav, navLinks, navLinksMapped } from "./Nav"
-import HomeWelcomeCard from "./HomeWelcomeCard"
+import { HomeWelcomeCardMobile, HomeWelcomeCardDesktop, ReactiveWelcomeCard } from "./WelcomeCards/"
 import ProdutShowcase from "./ProductShowcase"
-export { Nav, navLinks, navLinksMapped, HomeWelcomeCard, ProdutShowcase }
+export { Nav, navLinks, navLinksMapped, HomeWelcomeCardDesktop, HomeWelcomeCardMobile, ProdutShowcase, ReactiveWelcomeCard }
