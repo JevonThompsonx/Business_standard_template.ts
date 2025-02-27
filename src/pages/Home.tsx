@@ -1,4 +1,4 @@
-import { Nav, ReactiveWelcomeCard } from "../components"
+import { Nav, ReactiveWelcomeCard, ProductShowcase } from "../components"
 export default function Home() {
 
   return (
@@ -6,7 +6,7 @@ export default function Home() {
       <Nav />
       <div className="flex flex-col justify-evenly items-center h-screen w-screen bg-white">
         <ReactiveWelcomeCard />
-
+        <ProductShowcase />
       </div>
     </>
   );
