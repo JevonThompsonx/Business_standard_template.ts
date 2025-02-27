@@ -17,9 +17,12 @@ const ReactiveWelcomeCard: React.FC = () => {
     // Clean up event listener on unmount
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
+  // To do: 
+  // [] Fix sizing 
+  // [] 
   return (
     <div className="aspect-video max-w-[90%] h-auto max-h-[80%] mx-auto mt-28 mb-[5vh]">
+
       {isMobile ? (
         <HomeWelcomeCardMobile />
       ) : (
