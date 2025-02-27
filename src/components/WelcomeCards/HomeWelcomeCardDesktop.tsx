@@ -8,7 +8,7 @@ const HomeWelcomeCardDesktop = () => {
     // [] Choose how the text will appear 
     //    [] font 
     //    [] transparency with image
-    <div className="w-[90%] mx-auto h-auto aspect-video bg-[url(/images/Desktop/mor-shani-FIxc0thOzEQ-unsplash.jpg)] bg-cover bg-center flex flex-row items-center justify-evenly rounded-2xl">
+    <div className="w-full h-full bg-[url(/images/Desktop/mor-shani-FIxc0thOzEQ-unsplash.jpg)] bg-cover bg-center flex flex-row items-center justify-evenly rounded-2xl">
       <div id="text-box" className="h-full w-2/5 bg-white/20 flex flex-col justify-evenly items-start pl-6">
         <button className="p-1 bg-transparent font-bold text-black h-10 w-36 rounded-2xl border-1 border-black"> Unwind </button>
         <h1 className="">Lorem, ipsum dolor.</h1>
