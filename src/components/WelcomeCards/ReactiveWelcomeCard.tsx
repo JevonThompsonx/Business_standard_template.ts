@@ -19,7 +19,7 @@ const ReactiveWelcomeCard: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-full w-full mt-24 mb-10">
+    <div className="aspect-video max-w-[90%] h-auto max-h-[80%] mx-auto mt-28 mb-[5vh]">
       {isMobile ? (
         <HomeWelcomeCardMobile />
       ) : (
