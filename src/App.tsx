@@ -10,7 +10,7 @@ export default function App() {
         <Route path="/" element={<Home />}>
         </Route>
         <Route path='/about' element={<About />}></Route>
-        <Route path="/not_found" element={<NotFound />}>
+        <Route path="*" element={<NotFound />}>
         </Route>
       </Routes>
     </BrowserRouter>
