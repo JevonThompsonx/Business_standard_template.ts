@@ -5,9 +5,9 @@ import { NavLink, Link } from 'react-router-dom';
 type NavLinksType = { path: string; label: string }[];
 
 const navLinks: NavLinksType = [
+  { path: '/about', label: 'About Us' },
   { path: '/', label: 'Home' },
-  { path: '/about', label: 'About Me' },
-  { path: '/contact', label: 'Contact Me' }
+  { path: '/contact', label: 'Contact' }
   // add dropdown
 ];
 
