@@ -1,20 +1,5 @@
 @import "tailwindcss";
 
-.navLinksColors {
-  border-color: #3D8D7A;
-  color: black;
-  background-color: white;
-}
-
-.navLinksStyle {
-  border-width:2px;
-  border-radius: 10px 100px / 120px;
-  border-style: solid;
-}
-
-.navLinksColors:hover {
-  color:#3D8D7A;
-}
 
 /* Fluid Typography System - Base Settings */
 :root {
@@ -92,3 +77,21 @@ caption, .text-caption { font-size: var(--fs-caption); }
     --fs-h6: 1.25rem;
   }
 }
+
+
+.navLinksColors {
+  border-color: #3D8D7A;
+  color: black;
+  background-color: white;
+}
+
+.navLinksStyle {
+  border-width:2px;
+  border-radius: 10px 100px / 120px;
+  border-style: solid;
+}
+
+.navLinksColors:hover {
+  color:#3D8D7A;
+}
+
