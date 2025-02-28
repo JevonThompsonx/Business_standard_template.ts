@@ -21,7 +21,7 @@ const ReactiveWelcomeCard: React.FC = () => {
   // [] Fix sizing 
   // [] 
   return (
-    <div className="aspect-video max-w-[90%] h-auto max-h-[80%] mx-auto mt-28 mb-[5vh]">
+    <div className="aspect-square md:aspect-video w-[90%] md:max-w-[90%] md:h-auto md:max-h-[80%] mx-auto mt-10 md:mt-28 mb-6 md:mb-[5vh]">
 
       {isMobile ? (
         <HomeWelcomeCardMobile />
