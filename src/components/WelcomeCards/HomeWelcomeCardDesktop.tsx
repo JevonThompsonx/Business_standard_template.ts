@@ -8,11 +8,14 @@ const HomeWelcomeCardDesktop = () => {
     // [] Choose how the text will appear 
     //    [] font 
     //    [] transparency with image
-    <div className="w-full h-full bg-[url(/images/Desktop/mor-shani-FIxc0thOzEQ-unsplash.jpg)] bg-cover bg-center flex flex-row items-center justify-evenly rounded-2xl">
-      <div id="text-box" className="h-full w-2/5 bg-white/20 flex flex-col justify-evenly items-start pl-6">
-        <button className="p-1 bg-transparent font-bold text-black h-10 w-36 rounded-2xl border-1 border-black"> Unwind </button>
-        <h1 className="">Lorem, ipsum dolor.</h1>
-        <p className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium ipsam doloribus enim sit dicta quisquam neque blanditiis </p>
+    <div className="w-full h-full bg-[url(/images/Desktop/mor-shani-FIxc0thOzEQ-unsplash.jpg)] bg-cover bg-center flex flex-row items-center rounded-2xl">
+      <div id="text-box" className="h-full w-2/5 bg-black/40 flex flex-col justify-end items-start pl-6 font-semibold text-white">
+        <button className="w-4/5 py-2.5 px-5 bg-white/10 border border-white rounded-xl
+                    active:bg-black/20 transition-colors duration-200
+                    focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"> Unwind </button>
+        <h1 className="font-bold text-white tracking-tight
+                         leading-[1.2]">Lorem, ipsum dolor.</h1>
+        <p className="text-lg pb-2 text-white/90 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium ipsam doloribus enim sit dicta quisquam neque blanditiis </p>
       </div>
       <div className="h-full w-3/5"></div>
     </div>
