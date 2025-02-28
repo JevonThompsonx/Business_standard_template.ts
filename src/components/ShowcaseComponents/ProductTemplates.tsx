@@ -125,6 +125,8 @@ const ProductTemplateWithEmail: React.FC<ButtonProps> = ({ ButtonText, Heading, 
               } bg-white/20 text-white placeholder-white/70 
                       focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent`}
           />
+          //To do:
+          //fix red not working 
           {!isValid && (
             <p className="text-red-500 text-sm"> {/* Red text */}
               Please enter a valid email address.
