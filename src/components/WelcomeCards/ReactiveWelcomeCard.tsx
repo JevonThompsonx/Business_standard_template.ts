@@ -22,7 +22,7 @@ const ReactiveWelcomeCard: React.FC = () => {
   // [] 
 
   return (
-    <div className="aspect-square min-h-56 max-w-[90%] md:aspect-video md:max-w-[90%] md:h-auto md:max-h-[80%] mx-auto mt-10 md:mt-28  md:mb-[5vh] landscape:md:max-h-[90vh]
+    <div className="aspect-square min-h-56 max-w-[90%] md:aspect-video md:max-w-[90%] md:h-auto md:max-h-[80%] mx-auto mt-10 md:mt-36  md:mb-[5vh] landscape:md:max-h-[90vh]
                portrait:md:max-h-[75vh]
      pb-[safe-area-inset-bottom]
                pl-[safe-area-inset-left]

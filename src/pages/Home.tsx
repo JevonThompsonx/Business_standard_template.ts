@@ -3,8 +3,9 @@ export default function Home() {
 
   return (
     <>
-      <Nav />
-      <div className="flex flex-col justify-evenly items-center min-h-fit w-screen bg-white overflow-auto">
+      <div className="flex flex-col items-center min-h-fit w-screen bg-white overflow-auto space-y-8 md:space-y-10">
+
+        <Nav />
         <ReactiveWelcomeCard />
         <ProductShowcase />
       </div>
