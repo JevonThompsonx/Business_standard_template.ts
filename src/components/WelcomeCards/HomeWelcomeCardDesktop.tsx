@@ -17,7 +17,7 @@ const HomeWelcomeCardDesktop = () => {
                          leading-[1.2]">Lorem, ipsum dolor.</h1>
         <p className="text-lg pb-2 text-white/90 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium ipsam doloribus enim sit dicta quisquam neque blanditiis </p>
       </div>
-      <div className="h-full w-3/5"></div>
+      <div className="h-full w-3/5"> </div>
     </div>
   )
 
