@@ -22,3 +22,5 @@
 - deepseek & claude (for cleaning code)
 
 ### Helpers
+- tailwindcss docs
+- mdn docs
