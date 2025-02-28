@@ -9,7 +9,19 @@ const ProductShowcase = () => {
   ];
 
   return (
-    <div className="welcomeBottom w-[90%] mx-auto h-fit flex flex-col md:flex-row space-y-2 md:space-x-2 md:space-y-0">
+    <div
+      className="
+    welcomeBottom
+    w-[90%]
+    mx-auto
+    h-fit
+    flex
+    flex-col
+    md:flex-row
+    md:space-x-2
+    md:space-y-0
+  "
+    >
       {ComponentAttributeList.map((product) => (
         <ProductTemplate key={product.id} {...product} />
       ))}
