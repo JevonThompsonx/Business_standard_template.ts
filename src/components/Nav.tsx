@@ -31,7 +31,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white p-4 fixed w-screen top-0 z-10 navLinksColors h-20 md:h-14">
+    <nav className="bg-white p-4 fixed w-screen top-0 z-10 navLinksColors h-20 ">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo/Brand */}
         <a href='https://github.com/JevonThompsonx'
