@@ -4,6 +4,16 @@ interface ButtonProps {
   Heading: string;
   Link: string;
 }
+
+
+{/*To do:
+          //  fix red not working
+          //  Make sure site is proper responsive 
+          //  maybe switch to grid 
+          //  make sure email box is twice as large on other boxes on desktop
+          */}
+
+
 const ProductTemplate = ({ ButtonText, Heading, Link }: ButtonProps) => {
   return (
     <div className="h-80 w-full flex flex-col items-center rounded-2xl bg-blue-300 justify-evenly grow-2
@@ -125,9 +135,7 @@ const ProductTemplateWithEmail: React.FC<ButtonProps> = ({ ButtonText, Heading, 
               } bg-white/20 text-white placeholder-white/70 
                       focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent`}
           />
-          {/*To do:
-          //fix red not working
-          */}
+
           {!isValid && (
             <p className="text-red-500 text-sm"> {/* Red text */}
               Please enter a valid email address.
