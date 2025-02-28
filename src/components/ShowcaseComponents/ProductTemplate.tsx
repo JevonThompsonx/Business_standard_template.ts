@@ -5,7 +5,7 @@ interface ButtonProps {
 }
 const ProductTemplate = ({ ButtonText, Heading, Link }: ButtonProps) => {
   return (
-    <div className="">
+    <div className="h-80 w-full flex flex-col items-center rounded-2xl">
       <button>{ButtonText}</button>
       <button>{Link}</button>
       <h3>{Heading}</h3>
