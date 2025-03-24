@@ -39,7 +39,7 @@ export default function TestimonialCarousel() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="w-5/6 mx-auto px-4 py-12 ">
       <h2 className="text-3xl font-bold text-center mb-8">A Life Changing Experience</h2>
       <p className="text-center text-gray-600 mb-12">Don't just take our word for it. Check out our great reviews!</p>
 
