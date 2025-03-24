@@ -1,4 +1,4 @@
-import { Nav, ReactiveWelcomeCard, ProductShowcase, TestimonialCarousel, FAQSection, InstructorSection, WorkshopSection } from "../components"
+import { Nav, ReactiveWelcomeCard, ProductShowcase, TestimonialCarousel, FAQSection, InstructorSection, WorkshopSection, Footer } from "../components"
 export default function Home() {
 
   return (
@@ -12,6 +12,7 @@ export default function Home() {
         <WorkshopSection />
         <TestimonialCarousel />
         <FAQSection />
+        <Footer />
       </div>
     </>
   );
