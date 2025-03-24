@@ -4,4 +4,5 @@ import FAQSection from "./FAQSection"
 import ProductShowcase from "./ShowcaseComponents/ProductShowcase"
 import TestimonialCarousel from "./Testimonials"
 import InstructorSection from "./InstructorsSection"
-export { Nav, navLinks, navLinksMapped, HomeWelcomeCardDesktop, HomeWelcomeCardMobile, ProductShowcase,TestimonialCarousel ,ReactiveWelcomeCard, FAQSection, InstructorSection}
+import WorkshopSection from "./WorkshopSection"
+export { Nav, navLinks, navLinksMapped, HomeWelcomeCardDesktop, HomeWelcomeCardMobile, ProductShowcase,TestimonialCarousel ,ReactiveWelcomeCard, FAQSection, InstructorSection, WorkshopSection}
