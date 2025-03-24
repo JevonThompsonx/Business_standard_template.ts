@@ -3,11 +3,20 @@ interface ButtonProps {
   ButtonText: string;
   Heading: string;
   Link: string;
+  imageLink: string;
 }
 
-const ProductTemplate = ({ ButtonText, Heading, Link }: ButtonProps) => {
+const ProductTemplate = ({
+  ButtonText,
+  Heading,
+  Link,
+  imageLink,
+}: ButtonProps) => {
   return (
-    <div className="h-80 w-full flex flex-col items-center rounded-2xl justify-evenly grow-2 bg-[url(/images/kike-vega-F2qh3yjz6Jk-unsplash.jpg)] bg-cover bg-center">
+    <div
+      className="h-80 w-full flex flex-col items-center rounded-2xl justify-evenly grow-2 bg-cover bg-center"
+      style={{ backgroundImage: `url(/images/${imageLink})` }}
+    >
       <div className="grow-1" />
       <div
         id="buttonHome"
@@ -62,6 +71,7 @@ const ProductTemplateWithEmail: React.FC<ButtonProps> = ({
   ButtonText,
   Heading,
   Link,
+  imageLink,
 }) => {
   const [email, setEmail] = useState<string>("");
   const [isValid, setIsValid] = useState<boolean>(true);
@@ -76,7 +86,10 @@ const ProductTemplateWithEmail: React.FC<ButtonProps> = ({
   };
 
   return (
-    <div className="h-80 w-full flex flex-col items-center rounded-2xl bg-blue-300 justify-evenly grow-2">
+    <div
+      className="h-80 w-full flex flex-col items-center rounded-2xl bg-cover bg-center justify-evenly grow-2"
+      style={{ backgroundImage: `url(/images/${imageLink})` }}
+    >
       {/* Empty space at the top */}
       <div className="grow-1" />
 

@@ -5,25 +5,27 @@ const ProductShowcase = () => {
   const ComponentAttributeList = [
     {
       id: 4,
-      ButtonText: "Hi bud",
+      ButtonText: "Lorem",
       Link: "blahblahlink",
       Heading: "lorem lorem",
-      
+      imageLink: "kike-vega-F2qh3yjz6Jk-unsplash.jpg",
     },
     {
       id: 1,
-      ButtonText: "Hi bud",
+      ButtonText: "Lorem",
       Link: "blahblahlink",
       Heading: "lorem lorem",
+      imageLink: "klara-kulikova-6MxPH_N4huE-unsplash.jpg",
     },
   ];
 
   const ComponentAttributeListForEmailComponent = [
     {
       id: 4,
-      ButtonText: "Hi bud",
+      ButtonText: "Lorem",
       Link: "blahblahlink",
       Heading: "lorem lorem",
+      imageLink: "william-farlow-IevaZPwq0mw-unsplash.jpg",
     },
   ];
   return (
