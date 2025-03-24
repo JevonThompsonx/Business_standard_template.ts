@@ -22,9 +22,9 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 w-5/6">
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 w-5/6 shadow-lg rounded-lg">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-extralight text-gray-900 text-center mb-12">
+        <h2 className="text-4xl font-light text-gray-900 text-center mb-12 border-b-2 border-gray-200 pb-4">
           Frequently Asked Questions
         </h2>
         
@@ -44,10 +44,10 @@ const AccordionItem = ({ faq }: { faq: FAQItem }) => {
   return (
     <div className="border-b border-gray-200">
       <button
-        className="flex justify-between items-center w-full py-4 text-left"
+        className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-medium text-gray-700 hover:text-gray-900">
+        <span className="text-lg font-medium text-gray-700 hover:text-gray-900 transition-colors duration-300">
           {faq.question}
         </span>
         <span className="ml-6 h-7 flex items-center">
@@ -74,7 +74,7 @@ const AccordionItem = ({ faq }: { faq: FAQItem }) => {
           isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <p className="text-gray-500 pb-6">{faq.answer}</p>
+        <p className="text-gray-500 py-4 px-2">{faq.answer}</p>
       </div>
     </div>
   );

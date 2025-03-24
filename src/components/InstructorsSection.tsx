@@ -1,3 +1,4 @@
+import React from 'react';
 
 interface Instructor {
   id: number;
@@ -14,7 +15,7 @@ const InstructorCard = ({ instructor }: { instructor: Instructor }) => {
       className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-center bg-cover sm:h-80 lg:h-96"
       style={{ backgroundImage: `url(${instructor.image})`}}
     >
-      <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 sm:bg-black/25 lg:bg-black/50">
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50 flex flex-col justify-end p-6 sm:bg-gradient-to-t sm:from-black/25 sm:via-transparent sm:to-black/50 lg:bg-gradient-to-t lg:from-black/50 lg:via-transparent lg:to-black/50">
         <h3 className="text-xl font-bold text-white mb-2 sm:text-2xl lg:text-2xl"> 
           {instructor.firstName}<br />
           {instructor.lastName}
@@ -23,9 +24,9 @@ const InstructorCard = ({ instructor }: { instructor: Instructor }) => {
           {instructor.specialty}
         </p>
         <div className="flex gap-2">
-          <button className="backdrop-blur-sm bg-white/10 px-4 py-2 rounded-full text-white hover:bg-white/20 transition sm:px-6 sm:py-3 lg:px-6 lg:py-3 lg:text-lg"> 
+          <a href="/404" className="backdrop-blur-sm bg-white/10 px-4 py-2 rounded-full text-white hover:bg-white/20 transition sm:px-6 sm:py-3 lg:px-6 lg:py-3 lg:text-lg"> 
             View Profile
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -38,21 +39,20 @@ const AllInstructorsLink = () => {
       className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-center bg-cover sm:h-80 lg:h-96"
       style={{ backgroundImage: `url(/images/anna-zhynhel-i37NeYj0JV4-unsplash.jpg)` }}
     >
-      <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-black/50 sm:bg-black/25 lg:bg-black/50">
+      <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-t from-black via-transparent to-black/50 sm:bg-gradient-to-t sm:from-black/25 sm:via-transparent sm:to-black/50 lg:bg-gradient-to-t lg:from-black/50 lg:via-transparent lg:to-black/50">
         <h3 className="text-xl font-bold text-white mb-4 sm:text-2xl lg:text-2xl"> 
           Our<br />Instructors
         </h3>
         <p className="text-gray-200 mb-8 max-w-md sm:text-lg lg:text-lg"> 
           Discover our full team of certified yoga professionals dedicated to your wellness journey
         </p>
-        <button className="backdrop-blur-sm bg-white/10 px-6 py-3 rounded-full text-white hover:bg-white/20 transition sm:px-8 sm:py-4 lg:px-8 lg:py-4 lg:text-m"> 
+        <a href="/404" className="backdrop-blur-sm bg-white/10 px-6 py-3 rounded-full text-white hover:bg-white/20 transition sm:px-8 sm:py-4 lg:px-8 lg:py-4 lg:text-m"> 
           View All Instructors
-        </button>
+        </a>
       </div>
     </div>
   );
 };
-
 
 const MeetInstructors = () => {
   const instructors: Instructor[] = [
@@ -99,4 +99,4 @@ const MeetInstructors = () => {
   );
 };
 
-export default MeetInstructors;``
+export default MeetInstructors;
