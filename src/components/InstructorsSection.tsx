@@ -1,4 +1,3 @@
-// components/MeetInstructors.tsx
 
 interface Instructor {
   id: number;
@@ -12,19 +11,19 @@ interface Instructor {
 const InstructorCard = ({ instructor }: { instructor: Instructor }) => {
   return (
     <div
-      className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-center bg-cover h-80 sm:h-80 lg:h-96"
+      className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-center bg-cover sm:h-80 lg:h-96"
       style={{ backgroundImage: `url(${instructor.image})`}}
     >
       <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 sm:bg-black/25 lg:bg-black/50">
-        <h3 className="text-xl font-bold text-white mb-2 sm:text-2xl lg:text-2xl"> {/* Reduced large screen text size */}
+        <h3 className="text-xl font-bold text-white mb-2 sm:text-2xl lg:text-2xl"> 
           {instructor.firstName}<br />
           {instructor.lastName}
         </h3>
-        <p className="text-gray-200 mb-4 whitespace-pre-line sm:text-lg lg:text-lg"> {/* Reduced large screen text size */}
+        <p className="text-gray-200 mb-4 whitespace-pre-line sm:text-lg lg:text-lg"> 
           {instructor.specialty}
         </p>
         <div className="flex gap-2">
-          <button className="backdrop-blur-sm bg-white/10 px-4 py-2 rounded-full text-white hover:bg-white/20 transition sm:px-6 sm:py-3 lg:px-6 lg:py-3 lg:text-lg"> {/* Adjusted padding to maintain proportion */}
+          <button className="backdrop-blur-sm bg-white/10 px-4 py-2 rounded-full text-white hover:bg-white/20 transition sm:px-6 sm:py-3 lg:px-6 lg:py-3 lg:text-lg"> 
             View Profile
           </button>
         </div>
@@ -35,21 +34,25 @@ const InstructorCard = ({ instructor }: { instructor: Instructor }) => {
 
 const AllInstructorsLink = () => {
   return (
-    <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-gray-100 h-80 sm:h-80 lg:h-96">
+    <div
+      className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-center bg-cover sm:h-80 lg:h-96"
+      style={{ backgroundImage: `url(/images/anna-zhynhel-i37NeYj0JV4-unsplash.jpg)` }}
+    >
       <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-black/50 sm:bg-black/25 lg:bg-black/50">
-        <h3 className="text-xl font-bold text-gray-800 mb-4 sm:text-2xl lg:text-2xl"> {/* Reduced large screen text size */}
+        <h3 className="text-xl font-bold text-white mb-4 sm:text-2xl lg:text-2xl"> 
           Our<br />Instructors
         </h3>
-        <p className="text-gray-600 mb-8 max-w-md sm:text-lg lg:text-lg"> {/* Reduced large screen text size */}
+        <p className="text-gray-200 mb-8 max-w-md sm:text-lg lg:text-lg"> 
           Discover our full team of certified yoga professionals dedicated to your wellness journey
         </p>
-        <button className="backdrop-blur-sm bg-white/50 px-6 py-3 rounded-full text-gray-800 hover:bg-white/70 transition sm:px-8 sm:py-4 lg:px-8 lg:py-4 lg:text-lg"> {/* Adjusted padding to maintain proportion */}
+        <button className="backdrop-blur-sm bg-white/10 px-6 py-3 rounded-full text-white hover:bg-white/20 transition sm:px-8 sm:py-4 lg:px-8 lg:py-4 lg:text-m"> 
           View All Instructors
         </button>
       </div>
     </div>
   );
 };
+
 
 const MeetInstructors = () => {
   const instructors: Instructor[] = [
@@ -85,7 +88,7 @@ const MeetInstructors = () => {
         <h2 className="text-3xl font-bold text-gray-900 text-center mb-12 lg:text-4xl">
           Meet Our Instructors
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {instructors.map((instructor) => (
             <InstructorCard key={instructor.id} instructor={instructor} />
           ))}
@@ -96,4 +99,4 @@ const MeetInstructors = () => {
   );
 };
 
-export default MeetInstructors;
+export default MeetInstructors;``
