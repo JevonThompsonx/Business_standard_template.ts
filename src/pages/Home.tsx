@@ -1,4 +1,4 @@
-import { Nav, ReactiveWelcomeCard, ProductShowcase } from "../components"
+import { Nav, ReactiveWelcomeCard, ProductShowcase, TestimonialCarousel } from "../components"
 export default function Home() {
 
   return (
@@ -8,6 +8,7 @@ export default function Home() {
         <Nav />
         <ReactiveWelcomeCard />
         <ProductShowcase />
+        <TestimonialCarousel />
       </div>
     </>
   );
