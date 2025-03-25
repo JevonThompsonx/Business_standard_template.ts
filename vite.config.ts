@@ -18,16 +18,25 @@ export default defineConfig({
     },
     strategies: 'generateSW',
     manifest: {
-      // name: 'add name',
-      //short_name: 'add short name',
+      name: 'Zen Yoga Studio',
+      short_name: 'ZenYoga',
       start_url: "/",
-      // description: 'Add description',
-      //theme_color: 'add-color',
-      //background_color: 'add-color',
+      description: 'Find your inner peace with Zen Yoga Studio.',
+      theme_color: '#ffffff',
+      background_color: '#f0f4f8',
       display: "standalone",
-      //icons: [
-      // add icon info
-
+      // icons: [
+      //   {
+      //     src: "/icons/icon-192x192.png",
+      //     sizes: "192x192",
+      //     type: "image/png"
+      //   },
+      //   {
+      //     src: "/icons/icon-512x512.png",
+      //     sizes: "512x512",
+      //     type: "image/png"
+      //   }
+      // ]
     }
   })],
 })
