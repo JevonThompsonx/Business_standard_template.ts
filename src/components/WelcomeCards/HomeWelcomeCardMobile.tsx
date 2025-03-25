@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 
 const HomeWelcomeCardMobile = () => {
   return (
-    <div className="relative w-full h-full bg-[url(images/Mobile/erik-brolin-wmZNEGkcsmw-unsplash.jpg)] bg-cover bg-center flex flex-col justify-end rounded-2xl overflow-hidden shadow-lg">
+    <div className="relative w-full h-full bg-cover bg-center flex flex-col justify-end rounded-2xl overflow-hidden shadow-lg"
+       style={{ backgroundImage: `url(images/Mobile/erik-brolin-wmZNEGkcsmw-unsplash.jpg)`}}
+      >
       {/* Semi-transparent overlay with text */}
       <div className="bg-black/30 backdrop-blur-md pt-6 px-6 pb-8 space-y-4">
         {/* Text Content */}
