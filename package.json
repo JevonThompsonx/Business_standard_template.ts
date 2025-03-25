@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+   "scripts": {
     "dev": "bunx --bun vite",
-    "build": "vue-tsc -b && bunx --bun vite build",
+    "build": "tsc -b && bunx --bun vite build",
     "preview": "vite preview",
     "format": "bun biome format .",
     "lint": "bun biome check ."
