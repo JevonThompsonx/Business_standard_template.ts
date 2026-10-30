@@ -1,0 +1,5 @@
+{
+  "name": "business-standard-template",
+  "compatibility_date": "2026-10-30",
+  "assets": { "directory": "./dist", "not_found_handling": "single-page-application" }
+}
